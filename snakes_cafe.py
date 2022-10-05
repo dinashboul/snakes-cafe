@@ -32,20 +32,20 @@ Unicorn Tears
 ** What would you like to order? **
 ***********************************'''
 other_menu = [
-        "quit",
-        "wings",
-        "cookies",
-        "spring rolls",
-        "salmon",
-        "steak",
-        "meat tornado",
-        "a literal garden",
-        "ice cream",
-        "cake",
-        "pie",
-        "coffee",
-        "tea",
-        "unicorn tears"
+        "Quit",
+        "Wings",
+        "Cookies",
+        "",
+        "Salmon",
+        "Steak",
+        "Meat Tornado",
+        "A Literal Garden",
+        "Ice Cream",
+        "Cake",
+        "Pie",
+        "Coffee",
+        "Tea",
+        "Unicorn Tears"
 ]
 
 
@@ -54,10 +54,10 @@ def choose_order ():
 
     counter=0
     while True:
-        order = input("> ")
+        order = (input("> ").title())
         if order in other_menu:
         
-         if order == "quit":
+         if order == "Quit":
             if len(list)>1 :
                 count = pd.Series(list).value_counts()
                 print("your order is ")
